@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'mario';
+    src: url('/assets/fonts/SuperMario256.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color01: #FADAB4;
+    --color02: #8D4926;
+    --color03: #F8B860;
+    --color04: #F9F500;
+    --color05: #FFFFFF;
+    --color06: #E50014;
+    --color07: #2BBAE4;
+    --color08: #005CA9;
+
+    --font01: 'mario', monospace;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color06);
+}
+
+header h1 {
+    font-family: var(--font01);
+    font-size: 3.5em;
+    margin: 30px;
+    color: var(--color05);
+}
+
+header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin: 15px 30px 30px 30px;
+    color: var(--color04);
+    font-weight: 900;
+}   
+
+main {
+    height: 100%;
+    background: var(--color05) url('/assets/images/mario.png') top right / contain no-repeat fixed;
+    /* position: relative; */
+}
+
+main section .sm_desc {
+    max-width: 400px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: justify;
+}
+
+main section .sm_timeline {
+    max-width: 400px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+main section .sm_desc .strong_sm {
+    color: var(--color08);
+    font-family: var(--font01);
+ }
+
+main section .sm_desc .strong_mario {
+   color: red;
+   font-family: var(--font01);
+}
+
+main section p, ul {
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.342);
+    border-radius: 10px;
+    padding: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-indent: 30px;
+}
+
+main section ul {
+    list-style: none;
+}
+
+
