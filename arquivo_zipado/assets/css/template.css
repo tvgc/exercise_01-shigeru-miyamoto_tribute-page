@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'mario';
-    src: url('../fonts/SuperMario256.ttf') format('truetype');
+    src: url('fonts/SuperMario256.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -59,7 +59,7 @@ header p {
 
 main {
     height: 100%;
-    background: var(--color05) url('../images/mario.png') top right / contain no-repeat fixed;
+    background: var(--color05) url('../assets/fonts/SuperMario256.ttf') top right / contain no-repeat fixed;
 }
 
 section {
