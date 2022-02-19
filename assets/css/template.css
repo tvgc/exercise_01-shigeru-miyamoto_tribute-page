@@ -24,6 +24,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    width: 100%;
 }
 
 
@@ -41,24 +46,56 @@ header h1 {
     font-size: 3.5em;
     margin: 30px;
     color: var(--color05);
+    text-align: center;
 }
 
 header p {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em;
-    margin: 15px 30px 30px 30px;
+    margin: 0px 30px 30px 30px;
     color: var(--color04);
     font-weight: 900;
-}   
+    text-align: center;
+}
 
 main {
     height: 100%;
     background: var(--color05) url('/assets/images/mario.png') top right / contain no-repeat fixed;
-    /* position: relative; */
 }
 
+section {
+    position: relative;
+}
+
+main section .sm_image {
+    position: absolute;
+    width: 30%;
+}
+
+main section .sm_image img {
+    position: absolute;
+    display: block;
+    right: 0px;
+    top: 45px;
+    border-radius: 50px;
+    box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.397);
+}
+
+/* main section .pp_image {
+    position: absolute;
+    width: 30%;
+    bottom: 0px;
+}
+
+main section .pp_image img {
+    position: absolute;
+    display: block;
+    right: 0px;
+    border-radius: 50px;
+    width: 200px;
+} */
+
 main section .sm_desc {
-    max-width: 400px;
+    max-width: 500px;
     padding-top: 45px;
     padding-bottom: 45px;
     margin: auto;
@@ -68,8 +105,7 @@ main section .sm_desc {
 }
 
 main section .sm_timeline {
-    max-width: 400px;
-    padding-top: 45px;
+    max-width: 500px;
     padding-bottom: 45px;
     margin: auto;
     font-size: 1.2em;
@@ -88,8 +124,8 @@ main section .sm_desc .strong_mario {
 }
 
 main section p, ul {
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.342);
+    /* border: solid 3px rgb(0, 0, 0); */
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.342);
     border-radius: 10px;
     padding: 30px;
     color: black;
@@ -100,6 +136,71 @@ main section p, ul {
 
 main section ul {
     list-style: none;
+    text-indent: 0px;
 }
 
+main section ul li {
+    margin-bottom: 1em;
+}
 
+.date1 {
+    font-family: 'mario', sans-serif;
+    color: var(--color08);
+}
+
+.date2 {
+    font-family: 'mario', sans-serif;
+    color: var(--color07);
+}
+
+footer {
+    width: 100%;
+    background-color: var(--color06);
+}
+
+footer p {
+    text-align: center;
+    padding: 30px;
+    color: var(--color04);font-size: 1em;
+    font-weight: 900;
+}
+
+footer strong {
+    color: var(--color08);
+    font-family: 'mario';
+}
+
+footer a {
+    display: inline;
+    color: var(--color08);
+    font-size: 1.3em;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+
+    section {
+        position: static;
+    }
+
+    main section .sm_image {
+        position: inherit;
+        width: 100%;
+        margin: 0px auto;
+        padding-top: 45px;
+    }
+    
+    main section .sm_image img {
+        position: inherit;
+        margin: 0px auto;
+        border-radius: 50px;
+        box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.397);
+        max-width: 800px;
+    }
+
+    section .sm_desc p, .sm_timeline ul {
+        background-color: #f8b96077;
+    }
+
+}
